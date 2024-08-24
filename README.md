@@ -1,3 +1,6 @@
+
+![alt text](github-header-image.png)
+
 # vscode-clipboard-diff-patch
 
 ## Overview
@@ -31,12 +34,12 @@
     And you want to change `Line 2` to `Line 2 modified`. You create a diff patch:
 
     ```diff
-    --- example.txt
-    +++ example.txt
+    --- esc5221.txt
+    +++ esc5221.txt
     @@ -1,3 +1,3 @@
      Line 1
-    -Line 2
-    +Line 2 modified
+    -Paste each hunk
+    +Use Clipboard Diff Patch
      Line 3
     ```
 
