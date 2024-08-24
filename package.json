@@ -5,6 +5,10 @@
   "author": {
     "name": "esc5221"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esc5221/vscode-clipboard-diff-patch.git"
+  },
   "description": "VSCode Extension to Apply Diff Patch from Clipboard",
   "version": "0.0.1",
   "engines": {
@@ -36,7 +40,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
-    "@types/vscode": "^1.92.0",
+    "@types/vscode": "^1.86.0",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.11.0",
     "@vscode/test-cli": "^0.0.9",
