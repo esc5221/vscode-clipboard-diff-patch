@@ -1,11 +1,10 @@
 import * as vscode from "vscode";
-import { parsePatch, applyPatch, ParsedDiff, structuredPatch } from "diff";
 
 export function activate(context: vscode.ExtensionContext) {
-    console.log('Congratulations, your extension "paste-diff-patch" is now active!');
+    console.log('Congratulations, your extension "clipboard-diff-patch" is now active!');
 
     const disposable = vscode.commands.registerCommand(
-        "paste-diff-patch.applyDiffPatchFromClipboard",
+        "clipboard-diff-patch.applyDiffPatchFromClipboard",
         async () => {
             const clipboardContent = await vscode.env.clipboard.readText();
 
