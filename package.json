@@ -1,7 +1,7 @@
 {
   "name": "paste-diff-patch",
   "displayName": "paste-diff-patch",
-  "description": "",
+  "description": "VSCode Extension to Apply Diff Patch from Clipboard",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.86.0"
@@ -9,13 +9,15 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:paste-diff-patch.applyDiffPatchFromClipboard"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "paste-diff-patch.helloWorld",
-        "title": "Hello World"
+        "command": "paste-diff-patch.applyDiffPatchFromClipboard",
+        "title": "Apply Diff Patch from Clipboard"
       }
     ]
   },
@@ -28,14 +30,20 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.92.0",
+    "@types/diff": "^5.2.1",
+    "@types/diff-match-patch": "^1.0.36",
     "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.11.0",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
     "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0"
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "diff": "^6.0.0-beta",
+    "diff-match-patch": "^1.0.5"
   }
 }
